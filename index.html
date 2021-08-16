@@ -20,9 +20,73 @@
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./assets/icon/favicon.png" type="image/x-icon">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- HEADER -->
+
+  <head>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-dark fixed-top px-md-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <picture>
+            <img src="./assets/img/logo.png" alt="Logo Bullet CrossFit">
+          </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <picture>
+                <img src="./assets/img/logo.png" alt="Logo Bullet CrossFit">
+              </picture>
+            </div>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item mb-2">
+                <a class="nav-link active" aria-current="page" href="#">Sucursales</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link" href="#">¿Qué es CrossFit?</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Planes</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link">Comunidad</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link btn btn-main">Agenda tu clase muestra</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="mt-5 pt-4">
+      <!-- MAIN BANER -->
+      <section class="banner d-flex justify-content-center align-items-center flex-column position-relative px-4">
+        <h1 class="text-center text-light fw-bold">Conoce Bullet y cambia tu estilo de vida</h1>
+        <a href="#" class="btn btn-main position-absolute w-75 px-5 py-3 fs-2">Únete</a>
+      </section>
+    </main>
+    <div style="height: 500px;"></div>
+
+  </head>
 
 </body>
 

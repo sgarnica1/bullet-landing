@@ -1,0 +1,24 @@
+// Variables
+$primary-color: #93bb1c;
+$dark-color: #000;
+$light-color: #fff;
+$main-font: "DM Sans", sans-serif;
+
+// CONFIG
+body {
+  font-family: $main-font;
+  background-color: $dark-color;
+}
+a.btn {
+  transition: ease 0.5s;
+}
+a.btn:hover {
+  transform: scale(1.05);
+  transition: ease 0.5s;
+}
+
+// PX to REM
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}

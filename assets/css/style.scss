@@ -43,3 +43,9 @@ nav,
   bottom: -30px;
   max-width: toRem(280);
 }
+
+// ACCORDION
+.accordion-collapse {
+  background-color: $dark-color;
+  color: $light-color;
+}

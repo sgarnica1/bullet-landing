@@ -61,4 +61,9 @@ nav,
   bottom: -30px;
   max-width: 17.5rem;
 }
+
+.accordion-collapse {
+  background-color: #000;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

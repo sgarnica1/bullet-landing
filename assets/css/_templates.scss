@@ -1,0 +1,25 @@
+@import "./global";
+
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0.8em 1.7em;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: $color-light;
+  background: $color-secondary;
+}
+%button:hover {
+  color: $color-light;
+  background: $color-secondary-hover;
+}
+
+%icon {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

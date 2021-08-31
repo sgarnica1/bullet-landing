@@ -1,49 +1,107 @@
 body {
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   font-family: "DM Sans", sans-serif;
-  background-color: #000;
-}
-
-a.btn {
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
-}
-
-a.btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
-}
-
-/* NAVIGATION */
-nav,
-.offcanvas {
-  background-color: #000;
-}
-
-.navbar-brand picture img,
-.offcanvas-title picture img {
-  width: 100%;
-  max-width: 9rem;
-}
-
-.btn-main {
-  background-color: #93bb1c;
-  color: #fff;
-  font-weight: 500;
-}
-
-/* MAIN */
-/* MAIN BANNER */
-.banner {
-  width: 100%;
-  height: 25rem;
   position: relative;
-  background: url("../img/athlete.jpg");
+}
+
+a {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin-bottom: 0;
+}
+
+.wrapper__content {
+  padding-top: 5.9375rem;
+}
+
+.hide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #000;
+}
+
+.nav__button, .banner__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0.8em 1.7em;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #93bb1c;
+}
+
+.nav__button:hover, .banner__button:hover {
+  color: #fff;
+  background: #ade014;
+}
+
+.locations__body .locations__dropdown .dropdown__header span {
+  display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  z-index: 999;
+}
+
+.nav__logo img {
+  width: 8.75rem;
+}
+
+.nav__button {
+  height: 3.125rem;
+  width: 7.5rem;
+}
+
+.banner {
+  width: 100%;
+  height: 25rem;
+  background: url("../img/background__mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
+}
+
+.banner__title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #fff;
+}
+
+.banner__button {
+  font-size: 1.625rem;
+  height: 4.375rem;
+  width: 15.625rem;
+  bottom: -2.1875rem;
 }
 
 .banner::after {
@@ -53,17 +111,77 @@ nav,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
 
-.banner .btn {
-  bottom: -30px;
-  max-width: 17.5rem;
+.locations {
+  padding-top: 5rem;
 }
 
-.accordion-collapse {
-  background-color: #000;
+.locations__header-title {
+  font-weight: bold;
+  margin-bottom: 1.875rem;
+  font-size: 1.625rem;
   color: #fff;
+}
+
+.locations__header-description {
+  margin-bottom: 1.875rem;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.locations__body .locations__dropdown .dropdown__header {
+  width: 100%;
+  height: 2.8125rem;
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #fff;
+}
+
+.locations__body .locations__dropdown .dropdown__header h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.locations__body .locations__dropdown .dropdown__header span {
+  background: url("../icon/arrow__inactive.svg");
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body {
+  padding: 1.25rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #040404;
+  color: #fff;
+}
+
+.locations__body .locations__dropdown .dropdown__body * {
+  margin-bottom: 1.25rem;
+}
+
+.locations__body .locations__dropdown:first-child .dropdown__header {
+  border-radius: 6px 6px 0 0;
+}
+
+.locations__body .locations__dropdown:last-child .dropdown__header {
+  border-radius: 0 0 6px 6px;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: hidden !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

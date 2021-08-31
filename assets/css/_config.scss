@@ -1,0 +1,42 @@
+@import "./global";
+
+// CONFIG
+body {
+  background-color: $color-dark;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-primary;
+  position: relative;
+}
+
+a {
+  font-family: $font-primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin-bottom: 0;
+}
+
+.wrapper__content {
+  padding-top: toRem(95);
+}
+
+.hide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  background: $color-dark;
+}

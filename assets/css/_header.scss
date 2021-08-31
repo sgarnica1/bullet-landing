@@ -1,0 +1,20 @@
+@import "./global";
+
+.nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: $color-dark;
+  z-index: 999;
+
+  &__logo img {
+    width: toRem(140);
+  }
+  &__button {
+    height: toRem(50);
+    width: toRem(120);
+    @extend %button;
+  }
+}

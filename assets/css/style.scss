@@ -1,1 +1,9 @@
-@import "./_global.scss";
+@import "./global";
+@import "./config";
+@import "./templates";
+@import "./header";
+@import "./content";
+
+// MEDIA QUERIES
+// @import "./media-queries/desktop";
+@import "./media-queries/desktop";

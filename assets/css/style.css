@@ -22,6 +22,16 @@ a {
   margin-bottom: 0;
 }
 
+*:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(132, 217, 217, 0.5);
+  border-radius: 2px !important;
+}
+
+input:focus-visible {
+  box-shadow: none !important;
+}
+
 .wrapper__content {
   padding-top: 5.9375rem;
 }
@@ -32,6 +42,7 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
+  height: 100vh;
   width: 100%;
   z-index: 99999;
   background: #000;
@@ -55,11 +66,11 @@ a {
   background: #ade014;
 }
 
-.locations__body .locations__dropdown .dropdown__header span {
+.locations__body .locations__dropdown .dropdown__header span, .locations__body .locations__dropdown .dropdown__body .contact__contact-link .contact__contact-link--whatsapp, .locations__body .locations__dropdown .dropdown__body .contact__contact-link .contact__contact-link--location, .locations__body .locations__dropdown .dropdown__body .body__social .social__link span {
   display: inline-block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .nav {
@@ -70,6 +81,10 @@ a {
   left: 0;
   background: #000;
   z-index: 999;
+}
+
+.nav__logo {
+  display: inline-block;
 }
 
 .nav__logo img {
@@ -117,6 +132,7 @@ a {
 
 .locations {
   padding-top: 5rem;
+  padding-bottom: 3.75rem;
 }
 
 .locations__header-title {
@@ -156,9 +172,13 @@ a {
   height: 1.5625rem;
 }
 
-.locations__body .locations__dropdown .dropdown__body {
-  padding: 1.25rem 0.625rem;
+.locations__body .locations__dropdown .dropdown__body.show {
   display: flex;
+}
+
+.locations__body .locations__dropdown .dropdown__body {
+  display: none;
+  padding: 1.25rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -168,6 +188,61 @@ a {
 
 .locations__body .locations__dropdown .dropdown__body * {
   margin-bottom: 1.25rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__intro {
+  margin-bottom: 2.5rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .contact__contact-link {
+  display: grid;
+  grid-template-columns: 1.875rem auto;
+  gap: 0.3125rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.locations__body .locations__dropdown .dropdown__body .contact__contact-link .contact__contact-link--whatsapp {
+  background: url("../icon/whatsapp.svg");
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .contact__contact-link .contact__contact-link--location {
+  background: url("../icon/location.svg");
+  height: 1.5625rem;
+  width: 1.125rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__social .social__link span {
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__social .social__link.facebook span {
+  background: url("../icon/facebook.svg");
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__social .social__link.instagram span {
+  background: url("../icon/instagram.svg");
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations__body .locations__dropdown .dropdown__body .body__schedule .schedule__subtitle {
+  color: #93bb1c;
 }
 
 .locations__body .locations__dropdown:first-child .dropdown__header {

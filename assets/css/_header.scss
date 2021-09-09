@@ -9,6 +9,10 @@
   background: $color-dark;
   z-index: 999;
 
+  &__logo {
+    display: inline-block;
+  }
+
   &__logo img {
     width: toRem(140);
   }

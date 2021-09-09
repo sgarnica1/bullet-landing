@@ -170,6 +170,12 @@ input:focus-visible {
   background: url("../icon/arrow__inactive.svg");
   width: 1.5625rem;
   height: 1.5625rem;
+  transform: rotate(0);
+  transition: ease 0.5s;
+}
+
+.locations__body .locations__dropdown .dropdown__header span.rotate {
+  transform: rotate(180deg);
 }
 
 .locations__body .locations__dropdown .dropdown__body.show {
@@ -188,7 +194,7 @@ input:focus-visible {
   background-color: #040404;
   color: #fff;
   overflow: hidden;
-  transition: max-height 0.4s;
+  transition: max-height ease 0.3s;
 }
 
 .locations__body .locations__dropdown .dropdown__body * {
@@ -250,6 +256,10 @@ input:focus-visible {
   color: #93bb1c;
 }
 
+.locations__body .locations__dropdown .dropdown__body:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
 .locations__body .locations__dropdown:first-child .dropdown__header {
   border-radius: 6px 6px 0 0;
 }
@@ -257,6 +267,12 @@ input:focus-visible {
 .locations__body .locations__dropdown:last-child .dropdown__header {
   border-radius: 0 0 6px 6px;
   border: none;
+}
+
+.locations__body .locations__dropdown:last-child .dropdown__header.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid #fff;
 }
 
 .hero {
@@ -397,9 +413,10 @@ input:focus-visible {
 }
 
 .plans__container .plan-card .plan-card__body .plan-card__description li {
-  height: 2.5rem;
+  min-height: 2.5rem;
   text-align: center;
   font-size: 1.125rem;
+  margin-bottom: 0.625rem;
 }
 
 .plans__container .plan-card .plan-card__body .plan-card__button {

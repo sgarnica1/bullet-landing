@@ -48,7 +48,7 @@ input:focus-visible {
   background: #000;
 }
 
-.nav__button, .banner__button {
+.bullet-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,7 @@ input:focus-visible {
   background: #93bb1c;
 }
 
-.nav__button:hover, .banner__button:hover {
+.bullet-btn:hover {
   color: #fff;
   background: #ade014;
 }
@@ -170,20 +170,31 @@ input:focus-visible {
   background: url("../icon/arrow__inactive.svg");
   width: 1.5625rem;
   height: 1.5625rem;
+  transform: rotate(0);
+  transition: ease 0.5s;
+}
+
+.locations__body .locations__dropdown .dropdown__header span.rotate {
+  transform: rotate(180deg);
 }
 
 .locations__body .locations__dropdown .dropdown__body.show {
-  display: flex;
+  padding: 1.25rem;
+  max-height: 700px;
 }
 
 .locations__body .locations__dropdown .dropdown__body {
-  display: none;
-  padding: 1.25rem;
+  height: auto;
+  max-height: 0;
+  padding: 0;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #040404;
   color: #fff;
+  overflow: hidden;
+  transition: max-height ease 0.3s;
 }
 
 .locations__body .locations__dropdown .dropdown__body * {
@@ -245,6 +256,10 @@ input:focus-visible {
   color: #93bb1c;
 }
 
+.locations__body .locations__dropdown .dropdown__body:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
 .locations__body .locations__dropdown:first-child .dropdown__header {
   border-radius: 6px 6px 0 0;
 }
@@ -252,6 +267,12 @@ input:focus-visible {
 .locations__body .locations__dropdown:last-child .dropdown__header {
   border-radius: 0 0 6px 6px;
   border: none;
+}
+
+.locations__body .locations__dropdown:last-child .dropdown__header.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid #fff;
 }
 
 .hero {
@@ -270,6 +291,7 @@ input:focus-visible {
   height: 100%;
   padding: 1.25rem;
   color: #fff;
+  position: relative;
 }
 
 .hero__title {
@@ -405,40 +427,6 @@ input:focus-visible {
   height: 4.375rem;
   position: absolute;
   bottom: -35px;
-}
-
-.promo-banner {
-  position: relative;
-  background: url("../img/promo__banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 18.75rem;
-  width: 100%;
-  z-index: 1;
-}
-
-.promo-banner .promo-banner__container {
-  height: 100%;
-  color: #fff;
-  text-align: center;
-}
-
-.promo-banner h4 {
-  font-weight: bold;
-}
-
-.promo-banner h4:first-of-type {
-  font-size: 1.375rem;
-}
-
-.promo-banner h4:last-of-type {
-  font-size: 3.125rem;
-}
-
-.promo-banner p {
-  font-weight: 400;
-  font-size: 1.125rem;
 }
 
 @media (min-width: 992px) {

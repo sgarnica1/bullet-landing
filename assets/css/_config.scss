@@ -38,6 +38,10 @@ input:focus-visible {
   padding-top: toRem(95);
 }
 
+.bullet-btn {
+  @extend %button;
+}
+
 .hide__content {
   position: absolute;
   top: 0;
@@ -49,3 +53,4 @@ input:focus-visible {
   z-index: 99999;
   background: $color-dark;
 }
+

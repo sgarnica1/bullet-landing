@@ -19,6 +19,5 @@
   &__button {
     height: toRem(50);
     width: toRem(120);
-    @extend %button;
   }
 }

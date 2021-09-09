@@ -20,7 +20,6 @@
     height: toRem(70);
     width: toRem(250);
     bottom: toRem(-35);
-    @extend %button;
   }
 }
 
@@ -74,22 +73,33 @@
           background: url("../icon/arrow__inactive.svg");
           width: toRem(25);
           height: toRem(25);
+          transform: rotate(0);
+          transition: ease 0.5s;
           @extend %icon;
+        }
+
+        span.rotate {
+          transform: rotate(180deg);
         }
       }
 
       .dropdown__body.show {
-        display: flex;
+        padding: toRem(20);
+        max-height: 700px;
       }
 
       .dropdown__body {
-        display: none;
-        padding: toRem(20);
+        height: auto;
+        max-height: 0;
+        padding: 0;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: $color-background-2;
         color: $color-light;
+        overflow: hidden;
+        transition: max-height ease 0.3s;
 
         * {
           margin-bottom: toRem(20);
@@ -151,13 +161,24 @@
           }
         }
       }
+      .dropdown__body:last-child {
+        border-radius: 0 0 6px 6px;
+      }
     }
+
     .locations__dropdown:first-child .dropdown__header {
       border-radius: 6px 6px 0 0;
     }
+
     .locations__dropdown:last-child .dropdown__header {
       border-radius: 0 0 6px 6px;
       border: none;
+    }
+
+    .locations__dropdown:last-child .dropdown__header.active {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom: 1px solid #fff;
     }
   }
 }
@@ -177,6 +198,7 @@
     height: 100%;
     padding: toRem(20);
     color: $color-light;
+    position: relative;
   }
 
   &__title {
@@ -285,7 +307,7 @@
       }
 
       .plan-card__description {
-        padding: 0;
+        padding: 0; 
         list-style: none;
         color: $color-primary;
 
@@ -306,37 +328,5 @@
         bottom: -35px;
       }
     }
-  }
-}
-
-.promo-banner {
-  position: relative;
-  background: url("../img/promo__banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: toRem(300);
-  width: 100%;
-  z-index: 1;
-
-  .promo-banner__container {
-    height: 100%;
-    color: $color-light;
-    text-align: center;
-  }
-
-  h4 {
-    font-weight: bold;
-  }
-
-  h4:first-of-type {
-    font-size: toRem(22);
-  }
-  h4:last-of-type {
-    font-size: toRem(50);
-  }
-  p {
-    font-weight: 400;
-    font-size: toRem(18);
   }
 }

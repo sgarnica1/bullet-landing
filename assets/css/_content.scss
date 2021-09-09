@@ -126,16 +126,16 @@
           align-items: center;
           gap: toRem(30);
 
-          .social__link span{
+          .social__link span {
             height: toRem(50);
             width: toRem(50);
             @extend %icon;
           }
 
-          .social__link.facebook span{
+          .social__link.facebook span {
             background: url("../icon/facebook.svg");
           }
-          .social__link.instagram span{
+          .social__link.instagram span {
             background: url("../icon/instagram.svg");
           }
         }
@@ -200,8 +200,6 @@
   z-index: -1;
 }
 
-<<<<<<< Updated upstream
-=======
 #plans {
   display: inline-block;
   height: 50px;
@@ -342,4 +340,3 @@
     font-size: toRem(18);
   }
 }
->>>>>>> Stashed changes

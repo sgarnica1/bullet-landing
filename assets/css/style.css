@@ -294,8 +294,6 @@ input:focus-visible {
   z-index: -1;
 }
 
-<<<<<<< Updated upstream
-=======
 #plans {
   display: inline-block;
   height: 50px;
@@ -443,7 +441,6 @@ input:focus-visible {
   font-size: 1.125rem;
 }
 
->>>>>>> Stashed changes
 @media (min-width: 992px) {
   body {
     overflow: hidden !important;

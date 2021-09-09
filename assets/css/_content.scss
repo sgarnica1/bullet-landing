@@ -307,7 +307,7 @@
       }
 
       .plan-card__description {
-        padding: 0; 
+        padding: 0;
         list-style: none;
         color: $color-primary;
 
@@ -328,5 +328,35 @@
         bottom: -35px;
       }
     }
+  }
+}
+
+.promo-banner {
+  position: relative;
+  background: url("../img/promo__banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: toRem(300);
+  width: 100%;
+  z-index: 1;
+
+  .promo-banner__container {
+    height: 100%;
+    color: $color-light;
+    text-align: center;
+  }
+
+  h4:first-of-type {
+    font-size: toRem(22);
+    font-weight: 500;
+  }
+  h4:last-of-type {
+    font-weight: bold;
+    font-size: toRem(50);
+  }
+  p {
+    font-weight: 400;
+    font-size: toRem(18);
   }
 }

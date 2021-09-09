@@ -294,6 +294,156 @@ input:focus-visible {
   z-index: -1;
 }
 
+<<<<<<< Updated upstream
+=======
+#plans {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+.plans__container {
+  padding: 2.5rem 1.25rem;
+  padding-bottom: 5rem;
+}
+
+.plans__container .plans__intro h3 {
+  margin-bottom: 1.875rem;
+  font-size: 1.625rem;
+  color: #fff;
+}
+
+.plans__container .plans__intro p {
+  margin-bottom: 2.5rem;
+  font-size: 1.125rem;
+  color: #a7a7a7;
+}
+
+.plans__container .plan-cards__container {
+  grid-template-columns: repeat(5, 100%);
+  width: 100%;
+  max-width: 18.75rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 1.5625rem;
+  padding-bottom: 4.375rem;
+}
+
+.plans__container .plan-cards__container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.plans__container .plan-cards__container::-webkit-scrollbar-thumb {
+  background-color: #93bb1c;
+  border-radius: 5px;
+}
+
+.plans__container .plan-cards__container::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+}
+
+.plans__container .plan-card {
+  width: 100%;
+  background: #fff;
+  scroll-snap-align: center;
+  border-radius: 6px;
+  position: relative;
+}
+
+.plans__container .plan-card .plan-card__header {
+  height: 4.375rem;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans__container .plan-card .plan-card__header .plan-card__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #93bb1c;
+}
+
+.plans__container .plan-card .plan-card__body {
+  padding: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans__container .plan-card .plan-card__body .plan-card__price {
+  margin-bottom: 1.5625rem;
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.plans__container .plan-card .plan-card__body .plan-card__price span {
+  font-size: 1.375rem;
+}
+
+.plans__container .plan-card .plan-card__body .plan-card__description {
+  padding: 0;
+  list-style: none;
+  color: #4e4e4e;
+}
+
+.plans__container .plan-card .plan-card__body .plan-card__description li {
+  min-height: 2.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.plans__container .plan-card .plan-card__body .plan-card__button {
+  padding: 0;
+  width: 80%;
+  font-size: 1.125rem;
+  height: 4.375rem;
+  position: absolute;
+  bottom: -35px;
+}
+
+.promo-banner {
+  position: relative;
+  background: url("../img/promo__banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18.75rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.promo-banner .promo-banner__container {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.promo-banner h4 {
+  font-weight: bold;
+}
+
+.promo-banner h4:first-of-type {
+  font-size: 1.375rem;
+}
+
+.promo-banner h4:last-of-type {
+  font-size: 3.125rem;
+}
+
+.promo-banner p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+>>>>>>> Stashed changes
 @media (min-width: 992px) {
   body {
     overflow: hidden !important;

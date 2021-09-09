@@ -200,3 +200,146 @@
   z-index: -1;
 }
 
+<<<<<<< Updated upstream
+=======
+#plans {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+.plans__container {
+  padding: toRem(40) toRem(20);
+  padding-bottom: toRem(80);
+
+  .plans__intro h3 {
+    margin-bottom: toRem(30);
+    font-size: toRem(26);
+    color: $color-light;
+  }
+  .plans__intro p {
+    margin-bottom: toRem(40);
+    font-size: toRem(18);
+    color: $color-alternative;
+  }
+
+  .plan-cards__container {
+    grid-template-columns: repeat(5, 100%);
+    width: 100%;
+    max-width: toRem(300);
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: toRem(25);
+    padding-bottom: toRem(70);
+  }
+
+  .plan-cards__container::-webkit-scrollbar {
+    height: 5px;
+  }
+  .plan-cards__container::-webkit-scrollbar-thumb {
+    background-color: $color-secondary;
+    border-radius: 5px;
+  }
+  .plan-cards__container::-webkit-scrollbar-track {
+    background-color: #0f0f0f;
+  }
+
+  .plan-card {
+    width: 100%;
+    background: $color-light;
+    scroll-snap-align: center;
+    border-radius: 6px;
+    position: relative;
+
+    .plan-card__header {
+      height: toRem(70);
+      border-bottom: 1px solid $color-dark;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .plan-card__title {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: toRem(32);
+        color: $color-secondary;
+      }
+    }
+    .plan-card__body {
+      padding: toRem(30);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .plan-card__price {
+        margin-bottom: toRem(25);
+        font-size: toRem(50);
+        font-weight: bold;
+        color: $color-dark;
+
+        span {
+          font-size: toRem(22);
+        }
+      }
+
+      .plan-card__description {
+        padding: 0;
+        list-style: none;
+        color: $color-primary;
+
+        li {
+          min-height: toRem(40);
+          text-align: center;
+          font-size: toRem(18);
+          margin-bottom: toRem(10);
+        }
+      }
+
+      .plan-card__button {
+        padding: 0;
+        width: 80%;
+        font-size: toRem(18);
+        height: toRem(70);
+        position: absolute;
+        bottom: -35px;
+      }
+    }
+  }
+}
+
+.promo-banner {
+  position: relative;
+  background: url("../img/promo__banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: toRem(300);
+  width: 100%;
+  z-index: 1;
+
+  .promo-banner__container {
+    height: 100%;
+    color: $color-light;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  h4:first-of-type {
+    font-size: toRem(22);
+  }
+  h4:last-of-type {
+    font-size: toRem(50);
+  }
+  p {
+    font-weight: 400;
+    font-size: toRem(18);
+  }
+}
+>>>>>>> Stashed changes

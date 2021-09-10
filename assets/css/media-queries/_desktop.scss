@@ -1,7 +1,63 @@
 @import "../global";
 
-@media (min-width: 992px) {
-  body {
-    overflow: hidden !important;
+@media (min-width: 1100px) {
+  .banner {
+    &__title {
+      font-size: toRem(70);
+      max-width: toRem(1000);
+    }
+  }
+  .locations__body {
+    width: 100%;
+    max-width: toRem(1150);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    // gap: toRem(30);
+
+    .locations__dropdown {
+      margin: 0 toRem(20);
+
+      .dropdown__header {
+        border-radius: 6px 6px 0 0;
+        justify-content: center;
+
+        span {
+          display: none;
+        }
+      }
+
+      .dropdown__body {
+        padding: 1.25rem;
+        max-height: 700px;
+      }
+    }
+    .locations__dropdown:last-child .dropdown__header {
+      border-radius: 6px 6px 0 0;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .plans__container {
+    .plans__intro {
+      h3 {
+        margin-top: toRem(50);
+        font-size: toRem(42);
+      }
+      p {
+        font-size: toRem(26);
+      }
+    }
+    .plan-cards__container {
+      grid-template-columns: repeat(5, 300px);
+      max-width: toRem(1000);
+    }
+  }
+
+  .action {
+    height: toRem(400);
+    &__description {
+      font-size: toRem(50);
+    }
   }
 }

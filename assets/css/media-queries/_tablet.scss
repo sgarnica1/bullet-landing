@@ -1,0 +1,76 @@
+@import "../global";
+
+@media (min-width: 650px) {
+  .banner {
+    &__title {
+      font-size: toRem(50);
+      // max-width: toRem(600);
+    }
+  }
+  .locations {
+    &__header-title {
+      font-size: toRem(32);
+    }
+  }
+  .hero {
+    &__container {
+      max-width: toRem(600);
+      margin-left: 10%;
+    }
+
+    &__title {
+      font-size: toRem(46);
+    }
+    &__description {
+      font-size: toRem(22);
+    }
+  }
+
+  .carousel {
+    &__title {
+      font-size: toRem(36);
+      margin: toRem(50) 0;
+    }
+    .bootstrap-carousel__container {
+      max-width: toRem(400);
+      margin: 0 auto;
+    }
+  }
+
+  .action {
+    &__description {
+      font-size: toRem(36);
+    }
+    &__button {
+      font-size: toRem(22);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav.nav {
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+  }
+  .banner {
+    height: toRem(450);
+    background: url("../img/banner_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .promo-banner {
+    height: toRem(400);
+    h4:first-of-type {
+      font-size: toRem(28);
+    }
+    h4:last-of-type {
+      font-size: toRem(80);
+    }
+    p {
+      font-size: toRem(28);
+    }
+  }
+}

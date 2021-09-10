@@ -360,3 +360,27 @@
     font-size: toRem(18);
   }
 }
+
+.carousel {
+  &__container {
+    padding: toRem(40) toRem(20);
+    padding-bottom: toRem(80);
+  }
+  &__title {
+    color: $color-light;
+    margin-bottom: toRem(25);
+  }
+
+  .bootstrap-carousel__container {
+    .carousel-indicators {
+      bottom: toRem(-50);
+
+      button.active {
+        background-color: $color-secondary;
+      }
+    }
+    .carousel-inner {
+      border-radius: 6px;
+    }
+  }
+}

@@ -461,6 +461,28 @@ input:focus-visible {
   font-size: 1.125rem;
 }
 
+.carousel__container {
+  padding: 2.5rem 1.25rem;
+  padding-bottom: 5rem;
+}
+
+.carousel__title {
+  color: #fff;
+  margin-bottom: 1.5625rem;
+}
+
+.carousel .bootstrap-carousel__container .carousel-indicators {
+  bottom: -3.125rem;
+}
+
+.carousel .bootstrap-carousel__container .carousel-indicators button.active {
+  background-color: #93bb1c;
+}
+
+.carousel .bootstrap-carousel__container .carousel-inner {
+  border-radius: 6px;
+}
+
 @media (min-width: 992px) {
   body {
     overflow: hidden !important;

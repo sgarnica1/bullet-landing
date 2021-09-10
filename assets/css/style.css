@@ -483,6 +483,26 @@ input:focus-visible {
   border-radius: 6px;
 }
 
+.action {
+  height: 18.75rem;
+  background-color: #0f0f0f;
+}
+
+.action__container {
+  width: 100%;
+  height: 100%;
+}
+
+.action__description {
+  font-weight: bold;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.action__description span {
+  color: #93bb1c;
+}
+
 @media (min-width: 992px) {
   body {
     overflow: hidden !important;

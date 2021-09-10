@@ -1,6 +1,10 @@
 const dropdownButtons = document.querySelectorAll('.dropdown__header')
 const dropdownElements = document.querySelectorAll('.dropdown__body')
 
+const copyrightYear = document.querySelector('.footer__year')
+const date = new Date()
+let year = date.getFullYear()
+
 
 const dropdown = () => {
   for(let btn of dropdownButtons) {
@@ -22,4 +26,11 @@ const dropdown = () => {
   }
 }
 
+const setCopyrightYear = (year) => {
+  copyrightYear.innerText = year
+}
+
+
+
 dropdown()
+setCopyrightYear(year)

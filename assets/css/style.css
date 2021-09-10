@@ -503,6 +503,21 @@ input:focus-visible {
   color: #93bb1c;
 }
 
+.footer__container {
+  height: 100px;
+  color: #a7a7a7;
+  font-size: 1rem;
+}
+
+.footer__container .privacy-politics-link {
+  font-size: 0.8125rem;
+  color: #93bb1c;
+}
+
+.footer__container .privacy-politics-link:hover {
+  color: #a7a7a7;
+}
+
 @media (min-width: 992px) {
   body {
     overflow: hidden !important;

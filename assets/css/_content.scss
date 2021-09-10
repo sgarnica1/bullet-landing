@@ -403,3 +403,19 @@
     }
   }
 }
+
+.footer {
+  &__container {
+    height: 100px;
+    color: $color-alternative;
+    font-size: toRem(16);
+
+    .privacy-politics-link {
+      font-size: toRem(13);
+      color: $color-secondary;
+    }
+    .privacy-politics-link:hover {
+      color: $color-alternative;
+    }
+  }
+}

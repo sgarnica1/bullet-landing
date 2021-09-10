@@ -409,6 +409,14 @@
       color: $color-secondary;
     }
   }
+
+  &__button {
+    font-size: toRem(22);
+    padding: 0;
+    height: toRem(80);
+    width: 100%;
+    max-width: toRem(350);
+  }
 }
 
 .footer {

@@ -497,6 +497,14 @@ input:focus-visible {
   color: #93bb1c;
 }
 
+.action__button {
+  font-size: 1.375rem;
+  padding: 0;
+  height: 5rem;
+  width: 100%;
+  max-width: 21.875rem;
+}
+
 .footer__container {
   height: 100px;
   color: #a7a7a7;
@@ -519,6 +527,7 @@ input:focus-visible {
 
 .privacy__container {
   padding: 2.5rem 1.875rem;
+  padding-top: 5rem;
 }
 
 .privacy__title {

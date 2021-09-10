@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   position: relative;
   z-index: 1;
 
@@ -59,7 +59,7 @@
     .locations__dropdown {
       .dropdown__header {
         width: 100%;
-        height: toRem(45);
+        height: toRem(70);
         padding: toRem(10);
         display: flex;
         justify-content: space-between;
@@ -194,7 +194,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+
   height: toRem(400);
   width: 100%;
   z-index: 1;

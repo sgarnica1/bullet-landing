@@ -257,7 +257,7 @@
     max-width: toRem(300);
     overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     gap: toRem(25);
     padding-bottom: toRem(70);
   }

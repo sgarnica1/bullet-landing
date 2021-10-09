@@ -340,7 +340,7 @@ input:focus-visible {
   max-width: 18.75rem;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   gap: 1.5625rem;
   padding-bottom: 4.375rem;
 }
